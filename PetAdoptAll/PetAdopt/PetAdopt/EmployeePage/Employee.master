@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Root.Master" AutoEventWireup="true" CodeBehind="Employee.master.cs" Inherits="PetAdopt.Employee" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#990000" StaticSubMenuIndent="10px">
+    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <DynamicMenuStyle BackColor="#FFFBD6" />
+    <DynamicSelectedStyle BackColor="#FFCC66" />
+    <Items>
+        <asp:MenuItem NavigateUrl="~/EmployeePage/EmpHome.aspx" Text="首页" Value="首页">
+            <asp:MenuItem Text="动物" Value="动物">
+                <asp:MenuItem NavigateUrl="~/EmployeePage/EmpAdoptApply.aspx" Text="领养申请审核" Value="领养申请审核"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/EmployeePage/EmpPet.aspx" Text="动物更改" Value="动物更改"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/EmployeePage/EmpPetState.aspx" Text="动物状态更改" Value="动物状态更改"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="动物用品" Value="动物用品">
+                <asp:MenuItem NavigateUrl="~/EmployeePage/EmpItem.aspx" Text="商品更改" Value="商品更改"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/EmployeePage/EmpOrder.aspx" Text="订单状态更改" Value="订单状态更改"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/EmployeePage/EmpInf.aspx" Text="个人信息" Value="个人信息"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/EmployeePage/Manage.aspx" Text="管理员管理页" Value="管理员管理页"></asp:MenuItem>
+        </asp:MenuItem>
+    </Items>
+    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <StaticSelectedStyle BackColor="#FFCC66" />
+</asp:Menu>
+    </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+</asp:ContentPlaceHolder>
+</asp:Content>

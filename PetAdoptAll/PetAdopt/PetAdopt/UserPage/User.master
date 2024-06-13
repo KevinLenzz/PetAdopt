@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Root.Master" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="PetAdopt.User" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+<asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#990000" StaticSubMenuIndent="10px">
+        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicMenuStyle BackColor="#FFFBD6" />
+        <DynamicSelectedStyle BackColor="#FFCC66" />
+        <Items>
+            <asp:MenuItem NavigateUrl="~/UserPage/UserHome.aspx" Text="首页" Value="首页">
+                <asp:MenuItem Text="动物" Value="动物">
+                    <asp:MenuItem NavigateUrl="~/UserPage/UserAdoptState.aspx" Text="领养申请状态" Value="领养申请状态"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserPage/UserPetInf.aspx" Text="动物状态一览" Value="动物状态一览"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="动物用品" Value="动物用品">
+                    <asp:MenuItem NavigateUrl="~/UserPage/UserItem.aspx" Text="选购" Value="选购"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserPage/UserCart.aspx" Text="购物车" Value="购物车"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserPage/UserOrder.aspx" Text="订单状态" Value="订单状态"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserPage/UserInf.aspx" Text="个人信息" Value="个人信息"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticSelectedStyle BackColor="#FFCC66" />
+    </asp:Menu>
+</asp:Content>
+
+
+
